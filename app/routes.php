@@ -16,9 +16,10 @@ return function (App $app) {
     $app->get('/welcome', [WelcomeController::class, 'index']);
     $app->get('/welcome/{name}/{id}', [WelcomeController::class, 'show']);
 
-    $app->get('/home', function (Request  $request, Response  $response, $param) {
+    $app->get('/home', function (Request  $request, Response  $response, $param = []) {
 
         $name = 'Clean Code Studio';
+//        dd('hugo');
 
         return view($response, 'auth.home', compact('name'));
     });
