@@ -4,6 +4,7 @@
 use Jenssegers\Blade\Blade;
 use Psr\Http\Message\ResponseInterface as Response;
 
+//function view
 if (!function_exists('view'))
 {
     function view(Response $response, $template, $with = []) {
