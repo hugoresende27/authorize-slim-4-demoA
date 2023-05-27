@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use DI\Container;
 use Slim\Factory\AppFactory;
 //use Psr\Http\Message\ResponseInterface as Response;
@@ -7,6 +8,8 @@ use Slim\Factory\AppFactory;
 
 
 require __DIR__. '/../vendor/autoload.php';
+
+
 
 $container = new Container;
 
