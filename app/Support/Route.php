@@ -7,7 +7,7 @@ use Slim\App;
 class Route
 {
 
-    protected static App $app;
+    public static App $app;
 
     public static function setup (App $app)
     {
